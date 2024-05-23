@@ -1,3 +1,6 @@
 .header {
     margin: 10px 0;
+    background-color: blanchedalmond;
+    border: 3px solid blueviolet;
+    padding: 10px;
 }

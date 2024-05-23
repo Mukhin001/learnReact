@@ -1,0 +1,7 @@
+.showImg {
+    max-width: 300px;
+}
+
+.showImg img {
+    width: 100%;
+}

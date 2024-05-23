@@ -1,0 +1,28 @@
+.listContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.listContainer ul {
+    list-style-position: inside;
+    padding: 5px;
+}
+
+.listContainer ul li {
+    list-style-type: upper-roman;
+    padding: 3px;
+}
+
+.listContainer ul li:hover {
+    cursor: pointer;
+    background-color: rgb(249, 198, 121);
+    border-radius: 20px;
+}
+
+.liWrapImg {
+    max-width: 70px;
+}
+
+.liWrapImg img {
+    width: 100%;
+}
