@@ -3,11 +3,12 @@ import { useState } from 'react';
 
 import listArray  from "./listArray.js";
 
-const List = () => {
+const List = ({onClickLi}) => {
 
-    const [imgActive, imgSet] = useState('propsEmpty');
-
-    console.log(imgActive);
+    function clickLi(e, img) {
+       onClickLi(e, img); 
+    }
+   
     return (
         <div>
            <h4> List!</h4>
@@ -20,7 +21,7 @@ const List = () => {
                                 Object.keys(elem.list).map(key => (
                                    
                                     <li key={key}
-                                        onClick={() => imgSet(key)}
+                                         onClick={(e) => clickLi(key, e.currentTarget.children[0].children[0].src)}
                                     >{key}
                                         <div className={st.liWrapImg}>
                                             <img src={elem.list[key]} alt='img'/>
@@ -35,5 +36,6 @@ const List = () => {
         </div>
     );
 };
+
 
 export default List;
