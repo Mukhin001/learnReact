@@ -1,0 +1,27 @@
+.wrapBtnTheme {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btnTheme {
+    padding: 5px;
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btnLight {
+    background-color: darkseagreen;
+}
+
+.btnDark {
+    background-color: darkmagenta;
+}
+
+.btnLight::before {
+    content: 'light';
+}
+
+.btnDark::before {
+    content: 'dark';
+}

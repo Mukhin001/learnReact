@@ -1,5 +1,6 @@
 import st from './header.module.css';
 
+import BtnTheme from './btnTheme/btnTheme.jsx';
 import List from './list/list.jsx';
 import ShowImg from './showImg/showImg.jsx';
 import Input from './input/input.jsx';
@@ -19,6 +20,7 @@ const Header = () => {
 
     return (
         <header className={st.header}>I am Header!
+            <BtnTheme />
             <List onClickLi={handleChange}/>
             <ShowImg propsImg={imgState}/>
             <Input/>
